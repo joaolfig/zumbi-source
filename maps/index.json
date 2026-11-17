@@ -1,0 +1,32 @@
+[
+  {
+    "name": "cs_italy",
+    "file": "cs_italy.cswm",
+    "bytes": 6417692
+  },
+  {
+    "name": "cs_office",
+    "file": "cs_office.cswm",
+    "bytes": 6688764
+  },
+  {
+    "name": "de_cache",
+    "file": "de_cache.cswm",
+    "bytes": 12347516
+  },
+  {
+    "name": "de_mirage",
+    "file": "de_mirage.cswm",
+    "bytes": 13860180
+  },
+  {
+    "name": "de_nuke",
+    "file": "de_nuke.cswm",
+    "bytes": 18232680
+  },
+  {
+    "name": "de_train",
+    "file": "de_train.cswm",
+    "bytes": 11909280
+  }
+]

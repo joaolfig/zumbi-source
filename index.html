@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zumbi Source</title>
+    <script type="module" crossorigin src="./assets/index-Bg6Kqa6-.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BFSqbER3.css">
+  </head>
+  <body>
+    <div id="lobby">
+      <div class="panel">
+        <h1>Zumbi Source</h1>
+        <p class="sub">Sobreviva às ondas. Física de movimento do CS:S, multiplayer P2P.</p>
+        <label>Nome <input id="name" maxlength="20" /></label>
+        <label>Sensibilidade (CS) <input id="sens" type="number" step="0.1" min="0.1" max="20" /></label>
+        <label>Volume <input id="volume" type="range" min="0" max="1" step="0.05" /></label>
+        <fieldset>
+          <legend>Criar sala</legend>
+          <label>Modo
+            <select id="mode">
+              <option value="zombie">Zumbis (co-op)</option>
+              <option value="tdm">Mata-mata em times (com bots)</option>
+            </select>
+          </label>
+          <label>Mapa <select id="map"></select></label>
+          <div id="tdmopts">
+            <label>Jogadores por time <input id="teamsize" type="number" min="1" max="10" /></label>
+            <label>Abates para vencer <input id="goal" type="number" min="1" max="500" /></label>
+          </div>
+          <button id="host">Criar sala</button>
+        </fieldset>
+        <fieldset>
+          <legend>Entrar em uma sala</legend>
+          <label>Código <input id="code" maxlength="5" placeholder="ABCDE" /></label>
+          <button id="join">Entrar</button>
+        </fieldset>
+        <p id="status"></p>
+        <details>
+          <summary>Controles</summary>
+          <p>
+            WASD mover · Espaço pular · Ctrl/C agachar · Shift andar · Mouse1 atirar · R recarregar ·
+            1 AK-47 · 2 Pistola · 3 Escopeta · 4 Granada (segure e solte) · 5 P90 · 6 M249 · 7 AWP (Mouse2 mira) · Q arma anterior · Roda trocar ·
+            Tab placar · F3 malha de navegação · Mata-mata: M escolher time · E assumir um bot (morto)
+          </p>
+        </details>
+      </div>
+    </div>
+
+    <div id="hud" hidden>
+      <div id="scope" hidden></div>
+      <div id="teammenu" hidden>
+        <h2>Escolha seu time</h2>
+        <button data-team="1" class="tr">Terroristas</button>
+        <button data-team="2" class="ct">Contra-Terroristas</button>
+        <button data-team="0">Automático</button>
+      </div>
+      <div id="crosshair"><i></i><i></i><i></i><i></i></div>
+      <div id="hitmarker"></div>
+      <div id="damage"></div>
+      <div id="wave"></div>
+      <div id="center"></div>
+      <div id="feed"></div>
+      <div id="room"></div>
+      <div id="debug"></div>
+      <div id="bottom">
+        <div><span class="label">VIDA</span> <span id="hp">100</span></div>
+        <div class="right"><span id="weapon"></span> <span id="ammo"></span></div>
+      </div>
+      <div id="scoreboard"></div>
+      <div id="paused">Clique para jogar</div>
+    </div>
+  </body>
+</html>
